@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>火神セレン - ASTER Command</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: radial-gradient(circle at top, #0b0f2a, #000);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* 星エフェクト */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.transparenttextures.com/patterns/stardust.png");
+  opacity: 0.3;
+  z-index: -1;
+}
+
+/* ヘッダー */
+header {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  letter-spacing: 3px;
+}
+
+header p {
+  color: #aaa;
+}
+
+/* セクション */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* カード */
+.card {
+  background: rgba(20, 30, 60, 0.7);
+  border: 1px solid #2a3f8f;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 20px rgba(0,150,255,0.2);
+}
+
+/* ギャラリー */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* ボタン */
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(45deg,#00c6ff,#0072ff);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>火神セレン</h1>
+  <p>Commander of ASTER Battleship</p>
+</header>
+
+<section>
+
+<div class="card">
+<h2>📜 プロフィール</h2>
+<p>
+宇宙戦艦アステールの艦長。<br>
+数々の戦場を生き抜いてきた指揮官であり、冷静さと大胆さを併せ持つ。
+</p>
+</div>
+
+<div class="card">
+<h2>🖼 ギャラリー</h2>
+<div class="gallery">
+<img src="image1.png">
+<img src="image2.png">
+<img src="image3.png">
+</div>
+</div>
+
+<div class="card">
+<h2>🚀 ストーリー</h2>
+<p>
+西暦XXXX年。人類は銀河へ進出した。<br>
+火神セレンは宇宙戦艦アステールの艦長として未知の脅威に立ち向かう。
+</p>
+</div>
+
+<div class="card">
+<h2>🌐 SNS</h2>
+<a href="#" class="button">Xを見る</a>
+</div>
+
+</section>
+
+<footer>
+© ASTER Command / 火神セレン
+</footer>
+
+</body>
+</html>
